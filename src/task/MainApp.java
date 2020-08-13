@@ -12,9 +12,8 @@ public class MainApp {
             ObjectMapper objectMapper = new ObjectMapper();
 
             Response response = objectMapper.readValue(jsonURL, Response.class);
-            System.out.println(response.all.length); //24 сотрудника, 24 массива data
+            System.out.println(response.all.length);
 
-            //вывод их id
             for (Cat cat : response.all){
                 System.out.printf("%s %s %s %s %n", cat.getId(), cat.fact, cat.type, cat.user);
             }

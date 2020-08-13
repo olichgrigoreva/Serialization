@@ -1,7 +1,9 @@
 package task;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class People {
     @JsonProperty("first")
     public String firstName;
@@ -10,9 +12,6 @@ public class People {
 
     @Override
     public String toString() {
-        return "People{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                '}';
+        return  " " + firstName + " " + lastName;
     }
 }
