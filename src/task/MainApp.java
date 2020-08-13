@@ -14,12 +14,11 @@ public class MainApp {
             Response response = objectMapper.readValue(jsonURL, Response.class);
             System.out.println(response.all.length);
 
-            for (Cat cat : response.all){
+            for (Cat cat : response.all) {
                 System.out.printf("%s %s %s %s %n", cat.getId(), cat.fact, cat.type, cat.user);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }
