@@ -16,7 +16,7 @@ public class MainApp {
 
             //вывод их id
             for (Cat cat : response.all){
-                System.out.printf("%s %s %n", cat.getId(), cat.fact, cat.type);
+                System.out.printf("%s %s %s %s %n", cat.getId(), cat.fact, cat.type, cat.user);
             }
         } catch (IOException e) {
             e.printStackTrace();

@@ -13,7 +13,7 @@ public class Cat {
     public String fact;
     public String type;
 
-    //public User[] user;
+    public User user;
 
     public String getId() {
         return id;
@@ -29,7 +29,7 @@ public class Cat {
                 "id='" + id + '\'' +
                 ", fact='" + fact + '\'' +
                 ", type='" + type + '\'' +
-                //", user=" + Arrays.toString(user) +
+                ", user=" + user +
                 '}';
     }
 }

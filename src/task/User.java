@@ -10,11 +10,7 @@ import java.util.Arrays;
 public class User {
     @JsonProperty("_id")
     private String id;
-    public People[] name;
-    /*@JsonProperty("first")
-    public String firstName;
-    @JsonProperty("last")
-    public String lastName;*/
+    public People name;
 
     public String getId() {
         return id;
@@ -24,7 +20,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "id='" + id + '\'' +
-                ", name=" + Arrays.toString(name) +
+                ", name=" + name +
                 '}';
     }
 }
